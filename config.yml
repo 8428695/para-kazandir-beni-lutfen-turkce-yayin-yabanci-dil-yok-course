@@ -1,0 +1,16 @@
+title: Para kazandır beni lütfen türkçe yayın yabancı dil yok
+description: Para kazandır beni lütfen türkçe yayın yabancı dil yok
+template:
+  repo: para-kazandir-beni-lutfen-turkce-yayin-yabanci-dil-yok-template
+  name: para-kazandir-beni-lutfen-turkce-yayin-yabanci-dil-yok
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
